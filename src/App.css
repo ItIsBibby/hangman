@@ -1,38 +1,80 @@
+body {
+  background-color: rgb(175, 182, 255);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.word{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.tile {
+  font-weight: bold;
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.179);
+}
+
+.tile.found {
+  background: rgb(0, 255, 208);
+}
+
+#alphabet {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.letter {
+  width: 25px;
+  height: 25px;
+  margin: 1px;
+}
+
+button {
   color: white;
+  background-color: rgb(67, 85, 226);
+  border: none;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.image {
+  height: 300px;
+  width: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#newGame, #help {
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+#gameButtons {
+  display: flex;
+}
+
+#startMessage {
+  font-size: xx-large;
+  height: 71.6px;
+}
+
+.endMessage {
+  font-size: xx-large;
+}
+
+#helpText {
+  border: 2px solid black;
+  border-radius: 10px;
+  max-width: 390px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.232);
 }
