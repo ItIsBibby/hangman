@@ -1,6 +1,6 @@
 import './App.css';
 import { useSelector, useDispatch} from 'react-redux'
-import getWord from './components/GetWord'
+import getWord from './api/GetWord'
 import WordTiles from './components/WordTiles';
 import GuessInput from './components/GuessInput';
 import Image from './components/Image';
